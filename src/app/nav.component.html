@@ -1,0 +1,8 @@
+
+<div class="nav-margin">
+  <nav class="nav">
+    <li *ngFor="let item of navItems" class="nav-item">
+      <a class="nav-link active" [routerLink]="item.link">{{ item.title }}</a>
+    </li>
+  </nav>
+</div>
