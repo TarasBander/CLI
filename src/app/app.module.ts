@@ -14,6 +14,7 @@ import { SweaterComponent } from './sweater.component';
 import { TuxedoComponent } from './tuxedo.component';
 import { WatchesComponent } from './watches.component';
 import { NavComponent } from './nav.component';
+import { SpecialOffersComponent } from './special-offers.component';
 
 
 const appRoutes: Routes =[
@@ -38,7 +39,8 @@ const appRoutes: Routes =[
     SweaterComponent,
     TuxedoComponent,
     WatchesComponent,
-    NavComponent
+    NavComponent,
+    SpecialOffersComponent
   ],
   imports: [
     BrowserModule,
