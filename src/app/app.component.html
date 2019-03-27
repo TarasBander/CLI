@@ -2,10 +2,10 @@
   <div class="container-fluid contact-info">
     <div class="row">
       <div class="container">
-        <div class="contact-text">Help</div>
-        <div class="contact-text">Contact</div>
-        <div class="contact-text">Delivery Information</div>
-        <div class="contact-text">Call us : 032 2352 782</div>
+        <div class="contact-info__contact-text">Help</div>
+        <div class="contact-info__contact-text">Contact</div>
+        <div class="contact-info__contact-text">Delivery Information</div>
+        <div class="contact-info__contact-text">Call us : 032 2352 782</div>
       </div>
     </div>
   </div>
@@ -17,16 +17,16 @@
       <div class="col-lg-6 col-md-12 login-row">
         <div class="row">
           <div class="col-lg-12">
-            <button class="login-btn">LOGIN</button>
-            <button class="register-btn">REGISTER</button>
-            <button class="checkout-btn">CHECKOUT</button>
-            <div class="balance"><img src="assets/img/cart.png" alt="cart"> My Cart(0):$0</div>
+            <button class="login-row__login-btn">LOGIN</button>
+            <button class="login-row__register-btn">REGISTER</button>
+            <button class="login-row__checkout-btn">CHECKOUT</button>
+            <div class="login-row__balance"><img src="assets/img/cart.png" alt="cart"> My Cart(0):$0</div>
           </div>
         </div>
         <div class="col-lg-12 search">
-          <form>
-            <input type="search" class="search-input" type="text" placeholder="Search">
-            <input type="submit" value="">
+          <form class="search__form">
+            <input type="search" class="search__form_input" type="text" placeholder="Search">
+            <input type="submit" class="search__form_btn" value="">
           </form>
         </div>
       </div>
@@ -36,22 +36,22 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <router-outlet></router-outlet>
 <footer>
-  <div class="container-fluid footer-border">
-    <div class="row contact_us">
+  <div class="container-fluid footer">
+    <div class="row">
       <div class="container">
         <div class="row footer-row">
-          <div class="col-lg-6 col-md-12 follow">
+          <div class="col-lg-6 col-md-12 footer-row__follow">
             FOLLOW US ON
-            <a href="#"><img class="social-img" src="assets/img/facebook.png" alt="facebook"></a>
-            <a href="#"><img class="social-img" src="assets/img/twitter.png" alt="twitter"></a>
-            <a href="#"><img class="social-img" src="assets/img/google.png" alt="google"></a>
-            <a href="#"><img class="social-img" src="assets/img/instagram.png" alt="instagram"></a>
-            <a href="#"><img class="social-img" src="assets/img/pinterest.png" alt="pinterest"></a>
+            <a href="#"><img class="footer-row__social-img" src="assets/img/facebook.png" alt="facebook"></a>
+            <a href="#"><img class="footer-row__social-img" src="assets/img/twitter.png" alt="twitter"></a>
+            <a href="#"><img class="footer-row__social-img" src="assets/img/google.png" alt="google"></a>
+            <a href="#"><img class="footer-row__social-img" src="assets/img/instagram.png" alt="instagram"></a>
+            <a href="#"><img class="footer-row__social-img" src="assets/img/pinterest.png" alt="pinterest"></a>
           </div>
           <div class="col-lg-6 col-md-12">
             <form>
-              <input type="text" class="email-input" type="text" placeholder="Enter your email to oin our newsletter">
-              <button type="submit" class="join-btn">CHECKOUT</button>
+              <input type="text" class="footer-row__email-input" type="text" placeholder="Enter your email to oin our newsletter">
+              <button type="submit" class="footer-row__join-btn">CHECKOUT</button>
             </form>
           </div>
         </div>  
@@ -60,38 +60,38 @@
   </div>    
   <div class="container">
     <div class="row footer-row">
-      <div class="col-lg-2 footer">
-        <div class="footer-header">CUSTOMER CARE</div>
-        <div class="footer-text">Help Center</div>
-        <div class="footer-text">FAQ</div>
-        <div class="footer-text">How To Buy</div>
-        <div class="footer-text">Delivery</div>
+      <div class="col-lg-2 footer-row__info">
+        <div class="footer-row__info_header">CUSTOMER CARE</div>
+        <div class="footer-row__info_text">Help Center</div>
+        <div class="footer-row__info_text">FAQ</div>
+        <div class="footer-row__info_text">How To Buy</div>
+        <div class="footer-row__info_text">Delivery</div>
       </div>
-      <div class="col-lg-2 footer">
-        <div class="footer-header">ABOUT US</div>
-        <div class="footer-text">Our Stories</div>
-        <div class="footer-text">Press</div>
-        <div class="footer-text">Career</div>
-        <div class="footer-text">Contact</div>
+      <div class="col-lg-2 footer-row__info">
+        <div class="footer-row__info_header">ABOUT US</div>
+        <div class="footer-row__info_text">Our Stories</div>
+        <div class="footer-row__info_text">Press</div>
+        <div class="footer-row__info_text">Career</div>
+        <div class="footer-row__info_text">Contact</div>
       </div>
-      <div class="col-lg-2 footer">
-        <div class="footer-header">MY ACCOUNT</div>
-        <div class="footer-text">Login</div>
-        <div class="footer-text">My Cart</div>
-        <div class="footer-text">Older History</div>
-        <div class="footer-text">Payment</div>
+      <div class="col-lg-2 footer-row__info">
+        <div class="footer-row__info_header">MY ACCOUNT</div>
+        <div class="footer-row__info_text">Login</div>
+        <div class="footer-row__info_text">My Cart</div>
+        <div class="footer-row__info_text">Older History</div>
+        <div class="footer-row__info_text">Payment</div>
       </div>
-      <div class="col-lg-6 right-footer">
-        <div class="footer-header">
-          <span class="stories">OUR STORIES</span>
-          <button class="footer-btn">SOLO</button>
-          <button class="footer-btn">BOGOR</button>
+      <div class="col-lg-6 footer-row__stories">
+        <div class="footer-row__stories_header">
+          <span class="footer-row__stories_marg">OUR STORIES</span>
+          <button class="footer-row__stories_btn">SOLO</button>
+          <button class="footer-row__stories_btn">BOGOR</button>
         </div>
-        <div class="footer-text"><img src="assets/img/address.png" alt="adress"> Jl. Haji Muhidin, Blok G no.69</div>
-        <div class="footer-text"><img src="assets/img/footer_phone.png" alt="phone"> 025-2839341</div>
-        <div class="footer-text"><img src="assets/img/email.png" alt="email"> solo@gretong.com</div>
+        <div class="footer-row__stories_text"><img src="assets/img/address.png" alt="adress"> Jl. Haji Muhidin, Blok G no.69</div>
+        <div class="footer-row__stories_text"><img src="assets/img/footer_phone.png" alt="phone"> 025-2839341</div>
+        <div class="footer-row__stories_text"><img src="assets/img/email.png" alt="email"> solo@gretong.com</div>
       </div>
-      <div class="col-lg-6 policy"><span class="year">© 2015 Gretongan</span><span class="terms">Terms an Condititon</span><span class="terms">Privacy Policy</span></div>
+      <div class="col-lg-6 policy"><span class="policy__year">© 2015 Gretongan</span><span class="policy__terms">Terms an Condititon</span><span class="policy__terms">Privacy Policy</span></div>
     </div>
   </div>
 </footer>

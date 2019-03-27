@@ -5,16 +5,16 @@ import {Routes, RouterModule} from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent }  from './home.component';
-import { ArrivalsComponent } from './arrivals.component';
-import { GlassesComponent } from './glasses.component';
-import { ShirtComponent } from './shirt.component';
-import { ShoesComponent } from './shoes.component';
-import { SweaterComponent } from './sweater.component';
-import { TuxedoComponent } from './tuxedo.component';
-import { WatchesComponent } from './watches.component';
-import { NavComponent } from './nav.component';
-import { SpecialOffersComponent } from './special-offers.component';
+import { HomeComponent }  from './home/home.component';
+import { ArrivalsComponent } from './arrivals/arrivals.component';
+import { GlassesComponent } from './glasses/glasses.component';
+import { ShirtComponent } from './shirt/shirt.component';
+import { ShoesComponent } from './shoes/shoes.component';
+import { SweaterComponent } from './sweater/sweater.component';
+import { TuxedoComponent } from './tuxedo/tuxedo.component';
+import { WatchesComponent } from './watches/watches.component';
+import { NavComponent } from './nav-bar/nav.component';
+import { SpecialOffersComponent } from './special-offers/special-offers.component';
 
 
 const appRoutes: Routes =[
