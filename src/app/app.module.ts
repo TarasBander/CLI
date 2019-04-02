@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {Routes, RouterModule} from '@angular/router';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent }  from './home/home.component';
@@ -15,18 +13,7 @@ import { TuxedoComponent } from './tuxedo/tuxedo.component';
 import { WatchesComponent } from './watches/watches.component';
 import { NavComponent } from './nav-bar/nav.component';
 import { SpecialOffersComponent } from './special-offers/special-offers.component';
-
-
-const appRoutes: Routes =[
-    { path: '', component: HomeComponent},
-    { path: 'glasses', component: GlassesComponent},
-    { path: 'shirt', component: ShirtComponent},
-    { path: 'shoes', component: ShoesComponent},
-    { path: 'sweater', component: SweaterComponent},
-    { path: 'tuxedo', component: TuxedoComponent},
-    { path: 'watches', component: WatchesComponent},
-    { path: 'arrivals', component: ArrivalsComponent}
-];
+import { MainContentComponent } from './main-content/main-content.component';
 
 @NgModule({
   declarations: [
@@ -40,12 +27,12 @@ const appRoutes: Routes =[
     TuxedoComponent,
     WatchesComponent,
     NavComponent,
-    SpecialOffersComponent
+    SpecialOffersComponent,
+    MainContentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

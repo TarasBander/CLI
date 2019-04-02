@@ -1,0 +1,30 @@
+<div class="marg-top main-content">
+  <div class="main-block">
+    <div [ngClass]="{
+      'content-wrapper-1': btn,
+      'content-wrapper-2': !btn,
+      'img-block-1': header === 'NEW ARRIVALS', 
+      'img-block-2': header === 'TUXEDO', 
+      'img-block-3': header === 'SWEATER', 
+      'img-block-4': header === 'TREKKING SHOES', 
+      'img-block-5': header === 'CASUAL GLASSES', 
+      'img-block-6': header === 'FRESH LOOK T-SHIRT', 
+      'img-block-7': header === 'ELEGANT WATCHES'}">
+      <ng-container *ngIf="btn">
+        <div class="img-content-head-1">
+          {{ header }}
+        </div>
+        <div *ngIf="text" class="img-content-text">
+          {{ text }}
+        </div>
+        <button class="img-btn-1">{{ btn }}</button>
+      </ng-container>
+      <ng-container *ngIf="!btn">
+        <div class="img-content-head-2">
+          {{ header }}
+        </div>
+        <a class="img-btn-2"><img src="assets/img/right-arrow.png"  alt="right-arrow"></a>
+      </ng-container>
+    </div>
+  </div>
+</div>

@@ -1,22 +1,24 @@
-.offers-title {
+.offers {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-}
-.offers-title:before, .offers-title:after{
-    content: "";
-    flex: 1 1;
-    border-bottom: 1px solid rgb(229, 228, 226);
-    margin: auto;
-}
-.offers-title > span {
-	border: 1px solid rgb(229, 228, 226);
-	padding: 8px 20px;
-	color: rgb(229, 228, 226);
-	font-size: 20px;
-    font-family: "PlayfairDisplay";
-    color: rgb( 63, 61, 61 );
-    line-height: 0.7;
+
+    &:before, &:after {
+        content: "";
+        flex: 1 1;
+        border-bottom: 1px solid rgb(229, 228, 226);
+        margin: auto;
+    } 
+
+    .title{
+        border: 1px solid rgb(229, 228, 226);
+        padding: 8px 20px;
+        color: rgb(229, 228, 226);
+        font-size: 20px;
+        font-family: "PlayfairDisplay";
+        color: rgb( 63, 61, 61 );
+        line-height: 0.7;
+    }
 }
 
 .view {
