@@ -2,11 +2,11 @@
     width: 100%;
     margin-top: 20px;
 
-    .main-block{
+    &__main-block{
         height: 320px;
         overflow: hidden;
 
-        .content-wrapper-1 {
+        &_content-wrapper-1 {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -101,7 +101,7 @@
             }
         }
         
-        .content-wrapper-2 {
+        &_content-wrapper-2 {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -125,10 +125,6 @@
                 line-height: 1;
                 background: none;
                 cursor: pointer;
-
-                &:hover {
-                    background-color: black;
-                }
             }
         }
 

@@ -3,7 +3,7 @@
 	color: white;
     height: 30px;
     
-    .contact-info__contact-text {
+    &__contact-text {
         display: inline;
         padding-left: 10px;
         font-size: 14px;
@@ -31,7 +31,7 @@
 	margin-right: 0px!important;
     margin-left: 0px!important;
     
-    .login-row__login-btn {
+    &__login-btn {
         font-size: 12.691px;
         font-family: "Roboto";
         color: rgb( 63, 61, 61 );
@@ -44,7 +44,7 @@
         float: left;
     }
 
-    .login-row__register-btn {
+    &__register-btn {
         font-size: 12.691px;
         font-family: "Roboto";
         color: rgb( 63, 61, 61 );
@@ -56,11 +56,11 @@
         float: left;
     }
 
-    .login-row__balance {
+    &__balance {
         display: inline;
     }
 
-    .login-row__checkout-btn {
+    &__checkout-btn {
         margin-left: 15px;
         font-size: 12.691px;
         font-family: "Roboto";
@@ -81,13 +81,13 @@
     padding-right: 0px;
     padding-left: 0px;
 
-    .search__form {
+    &__form {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
         margin: 0 auto;
 
-        .search__form_btn {
+        &_btn {
             background: url(../assets/img/search.png) no-repeat 50% 50%;
             cursor: pointer;
             margin-right: 5px;  
@@ -100,7 +100,7 @@
             outline:none;
         }
 
-        .search__form_input {
+       &_input {
             height: 35px;
             width: 100%;
             border: none;
@@ -129,16 +129,16 @@
 	padding-top: 15px;
     padding-bottom: 15px;
 
-    .footer-row__follow {
+    &__follow {
         padding-top: 10px;
         margin-bottom: 10px;
     }
     
-    .footer-row__social-img {
+    &__social-img {
         margin-left: 10px;
     }
 
-    .footer-row__email-input {
+    &__email-input {
         width: 75%;
         height: 40px;
         padding-left: 20px;
@@ -155,7 +155,7 @@
         outline:none;
     }
     
-    .footer-row__join-btn {
+    &__join-btn {
         margin-left: 15px;
         font-size: 12.691px;
         font-family: "Roboto";
@@ -168,10 +168,10 @@
         float: right;
     }
 
-    .footer-row__info {
+    &__info {
         margin-top: 40px; 
 
-        .footer-row__info_header {
+        &_header {
             font-size: 15px;
             font-family: "PlayfairDisplay";
             color: rgb( 63, 61, 61 );
@@ -180,7 +180,7 @@
             margin-bottom: 15px;
         }
         
-        .footer-row__info_text {
+        &_text {
             font-size: 13px;
             font-family: "Roboto";
             color: rgb( 63, 61, 61 );
@@ -188,10 +188,10 @@
         }
     }
     
-    .footer-row__stories {
+    &__stories {
         margin-top: 35px;
 
-        .footer-row__stories_header {
+        &_header {
             font-size: 15px;
             font-family: "PlayfairDisplay";
             color: rgb( 63, 61, 61 );
@@ -200,11 +200,11 @@
             margin-bottom: 15px;
         }
 
-        .footer-row__stories_marg {
+        &_marg {
             margin-right: 10px;
         }
 
-        .footer-row__stories_btn{
+        &_btn{
             padding: 5px 16px;
             font-size: 13px;
             font-family: "Roboto";
@@ -219,7 +219,7 @@
             }
         }
 
-        .footer-row__stories_text {
+        &_text {
             font-size: 13px;
             font-family: "Roboto";
             color: rgb( 63, 61, 61 );
@@ -231,14 +231,14 @@
 .policy {
     margin-top: 40px;
     
-    .policy__year {
+    &__year {
         margin-right: 20px;
         font-size: 13px;
         font-family: "Roboto";
         color: rgb( 63, 61, 61 );
     }
     
-    .policy__terms {
+    &__terms {
         margin-left: 20px;
         font-size: 13px;
         font-family: "Roboto";

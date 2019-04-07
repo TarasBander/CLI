@@ -1,8 +1,8 @@
 
-<div class="nav-margin">
+<div class="nav-block">
   <nav class="nav">
-    <li *ngFor="let item of navItems" class="nav-item">
-      <a class="nav-link active" [routerLink]="item.link">{{ item.title }}</a>
+    <li *ngFor="let item of navItems" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" [routerLink]="item.link" class="nav-block__nav-item">
+      <a class="nav-block__nav-item_nav-link">{{ item.title }}</a>
     </li>
   </nav>
 </div>
