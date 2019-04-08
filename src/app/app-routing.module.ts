@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent }  from './home/home.component';
-import { ArrivalsComponent } from './arrivals/arrivals.component';
-import { GlassesComponent } from './glasses/glasses.component';
-import { ShirtComponent } from './shirt/shirt.component';
-import { ShoesComponent } from './shoes/shoes.component';
-import { SweaterComponent } from './sweater/sweater.component';
-import { TuxedoComponent } from './tuxedo/tuxedo.component';
-import { WatchesComponent } from './watches/watches.component'; 
+import { HomeComponent }  from './pages/home/home.component';
+import { ArrivalsComponent } from './pages/arrivals/arrivals.component';
+import { GlassesComponent } from './pages/glasses/glasses.component';
+import { ShirtComponent } from './pages/shirt/shirt.component';
+import { ShoesComponent } from './pages/shoes/shoes.component';
+import { SweaterComponent } from './pages/sweater/sweater.component';
+import { TuxedoComponent } from './pages/tuxedo/tuxedo.component';
+import { WatchesComponent } from './pages/watches/watches.component'; 
 
 const routes: Routes = [
   { path: '', component: HomeComponent},

@@ -42,6 +42,7 @@
         margin-right: 15px;
         cursor: pointer;
         float: left;
+        outline: none;
     }
 
     &__register-btn {
@@ -54,6 +55,7 @@
         padding: 8px 20px;
         cursor: pointer;
         float: left;
+        outline: none;
     }
 
     &__balance {
@@ -71,6 +73,7 @@
         padding: 8px 20px;
         cursor: pointer;
         float: right;
+        outline: none;
     }
 }
 
@@ -166,6 +169,7 @@
         cursor: pointer;
         height: 40px;
         float: right;
+        outline: none;
     }
 
     &__info {
@@ -213,6 +217,7 @@
             background-color: white; 
             margin-left: 10px;
             cursor: pointer;
+            outline: none;
 
             &:hover {
                 background-color: rgb(229, 228, 226); 
