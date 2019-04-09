@@ -9,4 +9,5 @@ export class MainContentComponent {
     @Input() header: string;
     @Input() text: string;
     @Input() btn: string;
+    @Input() film: string;
 }

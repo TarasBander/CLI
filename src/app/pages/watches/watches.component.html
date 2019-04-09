@@ -1,3 +1,14 @@
 <div class="container text-center">
     <h3>WATCHES</h3>
+    <section>
+        <div class="container">
+            <div class="row">
+                <main-content  *ngFor="let item of data" class="col-lg-6 col-sm-12"
+                [header]="item"
+                [film]="item">
+                </main-content>
+            </div>  
+        </div>
+    </section>
+    <special-offers></special-offers>
 </div>

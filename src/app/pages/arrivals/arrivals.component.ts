@@ -6,12 +6,12 @@ import { HttpClient } from '@angular/common/http';
     templateUrl: './arrivals.component.html',
     styleUrls: ['./arrivals.component.scss']
 })
-export class ArrivalsComponent { 
+export class ArrivalsComponent implements OnInit{ 
     data: any;
 
     constructor(private http: HttpClient){}
 
     ngOnInit(){       
-        this.http.get('https://swapi.co/api/people/').subscribe((data:any) => this.data = data);
+        this.http.get('https://swapi.co/api/people/1/').subscribe((data:any) => this.data = data.films);
     }
 }
