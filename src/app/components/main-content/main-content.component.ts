@@ -10,4 +10,5 @@ export class MainContentComponent {
     @Input() text: string;
     @Input() btn: string;
     @Input() film: string;
+    @Input() link: string;
 }

@@ -1,3 +1,5 @@
+$color-light-grey: rgb(228, 229, 228);
+
 .nav-block {
 	margin-top: 30px;
 	background-color:  rgb(245, 245, 245);
@@ -10,7 +12,7 @@
 		outline:none;
 
 		&:hover {
-			background-color: rgb(228, 229, 228);
+			background-color: $color-light-grey;
 		}
 
 		&_nav-link {
@@ -20,5 +22,5 @@
 }
 
 .active {
-	background-color: rgb(228, 229, 228);
+	background-color: $color-light-grey;
 }
