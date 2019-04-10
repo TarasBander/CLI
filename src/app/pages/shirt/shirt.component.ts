@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { DataService } from '../../services/data.service';
   
 @Component({
     selector: 'shirt',
     templateUrl: './shirt.component.html'
 })
-export class ShirtComponent {
+export class ShirtComponent implements OnInit{
     data: any;
 
-    constructor(private http: HttpClient){}
+    constructor(private dataService: DataService){}
 
     ngOnInit(){       
-        this.http.get('https://swapi.co/api/people/3/').subscribe((data:any) => this.data = data.films);
+        this.dataService.getData(3).subscribe((data:any) => this.data = data.films);
     }
  }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { DataService } from '../../services/data.service';
   
 @Component({
     selector: 'tuxedo',
@@ -8,9 +8,9 @@ import { HttpClient } from '@angular/common/http';
 export class TuxedoComponent implements OnInit{
     data: any;
 
-    constructor(private http: HttpClient){}
+    constructor(private dataService: DataService){}
 
     ngOnInit(){       
-        this.http.get('https://swapi.co/api/people/6/').subscribe((data:any) => this.data = data.films);
+        this.dataService.getData(6).subscribe((data:any) => this.data = data.films);
     }
  }

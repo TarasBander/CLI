@@ -15,6 +15,7 @@ import { WatchesComponent } from './pages/watches/watches.component';
 import { NavComponent } from './components/nav-bar/nav.component';
 import { SpecialOffersComponent } from './components/special-offers/special-offers.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
+import { DataService } from './services/data.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { MainContentComponent } from './components/main-content/main-content.com
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

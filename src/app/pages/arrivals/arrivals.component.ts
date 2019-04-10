@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { DataService } from '../../services/data.service';
   
 @Component({
     selector: 'arrivals',
@@ -9,9 +9,9 @@ import { HttpClient } from '@angular/common/http';
 export class ArrivalsComponent implements OnInit{ 
     data: any;
 
-    constructor(private http: HttpClient){}
+    constructor(private dataService: DataService){}
 
-    ngOnInit(){       
-        this.http.get('https://swapi.co/api/people/1/').subscribe((data:any) => this.data = data.films);
+    ngOnInit(){  
+        this.dataService.getData(1).subscribe((data:any) => this.data = data.films);
     }
 }
