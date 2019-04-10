@@ -11,4 +11,5 @@ export class MainContentComponent {
     @Input() btn: string;
     @Input() film: string;
     @Input() link: string;
+    @Input() url: string;
 }
