@@ -2,13 +2,13 @@
   <section>
     <div class="container">
       <div class="row">
-        <main-content  *ngFor="let item of pages" [class]="item.classes"
+        <main-block  *ngFor="let item of pages" [class]="item.classes"
           [header]="item.header"
           [text]="item.text"
           [btn]="item.btn"
           [link]="item.link"
-          [url]="item.url">
-        </main-content>
+          [backgroundUrl]="item.url">
+        </main-block>
       </div>  
     </div>
   </section>

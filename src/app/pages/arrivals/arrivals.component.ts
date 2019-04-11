@@ -8,10 +8,15 @@ import { DataService } from '../../services/data.service';
 })
 export class ArrivalsComponent implements OnInit{ 
     data: any;
+    loading: boolean = false;
 
     constructor(private dataService: DataService){}
 
     ngOnInit(){  
-        this.dataService.getData(1).subscribe((data:any) => this.data = data.films);
+        this.loading = true;
+        this.dataService.getData(1).subscribe((data:any) => {
+            this.data = data.films;
+            this.loading = false;
+        });
     }
 }

@@ -7,10 +7,15 @@ import { DataService } from '../../services/data.service';
 })
 export class ShirtComponent implements OnInit{
     data: any;
+    loading: boolean = false;
 
     constructor(private dataService: DataService){}
 
-    ngOnInit(){       
-        this.dataService.getData(3).subscribe((data:any) => this.data = data.films);
+    ngOnInit(){  
+        this.loading = true;
+        this.dataService.getData(3).subscribe((data:any) => {
+            this.data = data.films;
+            this.loading = false;
+        });
     }
  }
