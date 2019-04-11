@@ -55,51 +55,13 @@ $color-black: rgba(0, 0, 0, 0);
             }
         }
 
-        .img-block-1 {
-            height: 100%;	
-            background: -webkit-linear-gradient(top, $color-black 0%, $color-black 50%, rgba(0, 0, 0, 0.65) 100%), url('../../../assets/img/new_arrival.png') center center no-repeat;
-            background-size: cover;
+        .img-block {
+            height: 100%;
             width: 100%;
             transition: transform .2s;
 
             &:hover {
                 transform: scale(1.1);
-            }
-        }
-
-        .img-block-2 {
-            height: 320px;
-            width: 100%;
-            background: -webkit-linear-gradient(top, $color-black 0%, $color-black 50%, rgba(0, 0, 0, 0.65) 100%), url('../../../assets/img/tuxedo.png') center center no-repeat;
-            background-size: cover;
-            transition: transform .2s;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        .img-block-3 {
-            height: 320px;
-            width: 100%;
-            background: -webkit-linear-gradient(top, $color-black 0%, $color-black 50%, rgba(0, 0, 0, 0.65) 100%), url('../../../assets/img/sweater.png') center center no-repeat;
-            background-size: cover;
-            transition: transform .2s;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        .img-block-6 {
-            height: 320px;
-            width: 100%;
-            background: -webkit-linear-gradient(top, $color-black 0%, $color-black 50%, rgba(0, 0, 0, 0.65) 100%), url('../../../assets/img/t_shirt.png') center center no-repeat;
-            background-size: cover;
-            transition: transform .2s;
-
-            &:hover {
-                transform: scale(1.2);
             }
         }
         
@@ -126,54 +88,6 @@ $color-black: rgba(0, 0, 0, 0);
                 line-height: 1;
                 background: none;
                 cursor: pointer;
-            }
-        }
-
-        .img-block-4 {
-            height: 320px;
-            width: 100%;
-            background: -webkit-linear-gradient(top, $color-black 0%, $color-black 50%, rgba(0, 0, 0, 0.65) 100%), url('../../../assets/img/shoes.png') center center no-repeat;
-            background-size: cover;
-            transition: transform .2s;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        .img-block-5 {
-            height: 320px;
-            width: 100%;
-            background: -webkit-linear-gradient(top, $color-black 0%, $color-black 50%, rgba(0, 0, 0, 0.65) 100%), url('../../../assets/img/glasses.png') center center no-repeat;
-            background-size: cover;
-            transition: transform .2s;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-        
-        .img-block-7 {
-            height: 320px;
-            width: 100%;
-            background: -webkit-linear-gradient(top, $color-black 0%, $color-black 50%, rgba(0, 0, 0, 0.65) 100%), url('../../../assets/img/watches.png') center center no-repeat;
-            background-size: cover;
-            transition: transform .2s;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        .img-block-8 {
-            height: 320px;
-            width: 100%;
-            background: -webkit-linear-gradient(top, $color-black 0%, $color-black 50%, rgba(0, 0, 0, 0.65) 100%), url('../../../assets/img/no-image.jpg') center center no-repeat;
-            background-size: cover;
-            transition: transform .2s;
-
-            &:hover {
-                transform: scale(1.1);
             }
         }
     }

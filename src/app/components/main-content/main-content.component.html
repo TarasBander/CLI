@@ -1,16 +1,8 @@
 <div class="main-content">
   <div class="main-content__main-block">
-    <div [ngClass]="{
+    <div class="img-block" [ngStyle]="{'background': !film ? backgroundImage : noBackgroundImage, 'background-size': 'cover'}" [ngClass]="{
       'main-content__main-block_content-wrapper-1': btn,
-      'main-content__main-block_content-wrapper-2': !btn,
-      'img-block-1': header === 'NEW ARRIVALS', 
-      'img-block-2': header === 'TUXEDO', 
-      'img-block-3': header === 'SWEATER', 
-      'img-block-4': header === 'TREKKING SHOES', 
-      'img-block-5': header === 'CASUAL GLASSES', 
-      'img-block-6': header === 'FRESH LOOK T-SHIRT', 
-      'img-block-7': header === 'ELEGANT WATCHES',
-      'img-block-8': film}">
+      'main-content__main-block_content-wrapper-2': !btn}">
       <ng-container *ngIf="btn">
         <div class="img-content-head-1">
           {{ header }}
