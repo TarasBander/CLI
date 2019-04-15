@@ -1,6 +1,6 @@
 <div class="main-content">
   <div class="main-content__main-block">
-    <div class="img-block" [ngStyle]="{'background': !film ? backgroundImage : noBackgroundImage, 'background-size': 'cover'}" [ngClass]="{
+    <div class="img-block" [ngStyle]="{'background': backgroundImage, 'background-size': 'cover'}" [ngClass]="{
       'main-content__main-block_content-wrapper-1': btn,
       'main-content__main-block_content-wrapper-2': !btn}">
       <ng-container *ngIf="btn">

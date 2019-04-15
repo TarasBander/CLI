@@ -128,6 +128,13 @@
 	padding-top: 15px;
     padding-bottom: 15px;
 
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+    }
+
     &__follow {
         padding-top: 10px;
         margin-bottom: 10px;

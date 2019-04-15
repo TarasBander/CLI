@@ -14,10 +14,6 @@ export class MainBlockComponent {
     @Input() backgroundUrl: string;
 
     get backgroundImage() {
-        return `-webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.65) 100%), url('${this.backgroundUrl}') center center no-repeat`;
-    }
-
-    get noBackgroundImage() {
-        return `url('../../../assets/img/no-image.jpg') center center no-repeat`;
+        return !this.backgroundUrl ? `url('../../../assets/img/no-image.jpg') center center no-repeat` : `-webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.65) 100%), url('${this.backgroundUrl}') center center no-repeat`;
     }
 }
